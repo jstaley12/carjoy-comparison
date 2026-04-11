@@ -164,6 +164,10 @@ p, li, span, div, label { font-family: 'DM Sans', sans-serif !important; }
     background: #fff !important;
     border-radius: 8px !important;
 }
+[data-testid="stFileUploaderDropzone"] {
+    background: #f7f4ef !important;
+    border: 1.5px dashed #e8e2d9 !important;
+}
 [data-testid="stDataFrame"] {
     border: 1.5px solid #e8e2d9 !important;
     border-radius: 8px !important;
