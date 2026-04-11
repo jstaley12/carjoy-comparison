@@ -31,22 +31,22 @@ def check_password():
 
     st.markdown("""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap');
     html, body, [data-testid="stAppViewContainer"] {
-        background: #f7f4ef;
+        background: #0a0a0f;
     }
     .login-wrap {
         display: flex; flex-direction: column; align-items: center;
         justify-content: center; min-height: 80vh; gap: 0;
     }
     .login-logo {
-        font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 900;
-        color: #1a1a1a; letter-spacing: -1px; margin-bottom: 4px;
+        font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800;
+        color: #fff; letter-spacing: -2px; margin-bottom: 4px;
     }
-    .login-logo span { color: #d4900a; }
+    .login-logo span { color: #f0b429; }
     .login-sub {
-        font-family: 'DM Sans', sans-serif; font-size: 0.75rem;
-        color: #999; letter-spacing: 4px; text-transform: uppercase;
+        font-family: 'DM Sans', sans-serif; font-size: 0.85rem;
+        color: #555; letter-spacing: 3px; text-transform: uppercase;
         margin-bottom: 40px;
     }
     </style>
@@ -71,105 +71,91 @@ def check_password():
 # ── Styling ───────────────────────────────────────────────────────────────────
 MAIN_CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
-    background: #f7f4ef !important;
-    color: #1a1a1a;
+    background: #0a0a0f !important;
+    color: #e8e6e0;
 }
-[data-testid="stSidebar"] { background: #ede9e2 !important; }
+[data-testid="stSidebar"] { background: #0f0f18 !important; }
 
-h1,h2,h3 { font-family: 'Playfair Display', serif !important; }
+h1,h2,h3 { font-family: 'Syne', sans-serif !important; }
 p, li, span, div, label { font-family: 'DM Sans', sans-serif !important; }
 
 .cj-header {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.6rem; font-weight: 900;
-    color: #1a1a1a; letter-spacing: -1px;
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem; font-weight: 800;
+    color: #fff; letter-spacing: -1.5px;
     margin-bottom: 2px;
 }
-.cj-header span { color: #d4900a; }
+.cj-header span { color: #f0b429; }
 .cj-sub {
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.72rem; color: #aaa;
-    letter-spacing: 4px; text-transform: uppercase;
+    font-size: 0.78rem; color: #555;
+    letter-spacing: 3px; text-transform: uppercase;
     margin-bottom: 32px;
 }
 .upload-box {
-    background: #fff;
-    border: 1.5px solid #e8e2d9;
+    background: #12121c;
+    border: 1px solid #1e1e2e;
     border-radius: 12px;
     padding: 24px 20px 20px;
     margin-bottom: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .upload-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.72rem; font-weight: 700;
-    color: #d4900a; letter-spacing: 3px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.75rem; font-weight: 700;
+    color: #f0b429; letter-spacing: 2px;
     text-transform: uppercase; margin-bottom: 8px;
 }
 .stat-card {
-    background: #fff; border: 1.5px solid #e8e2d9;
+    background: #12121c; border: 1px solid #1e1e2e;
     border-radius: 10px; padding: 16px 20px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .stat-val {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem; font-weight: 900; color: #1a1a1a;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.8rem; font-weight: 800; color: #fff;
 }
-.stat-val.up { color: #2a7a3b; }
-.stat-val.down { color: #c0392b; }
+.stat-val.up { color: #f0b429; }
+.stat-val.down { color: #e05c5c; }
 .stat-label {
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.68rem; color: #aaa;
+    font-size: 0.72rem; color: #555;
     letter-spacing: 2px; text-transform: uppercase; margin-top: 4px;
 }
 .issue-card {
-    background: #fffbf2; border: 1.5px solid #f5d98b;
+    background: #1a1208; border: 1px solid #3d2c00;
     border-radius: 10px; padding: 16px 20px; margin-bottom: 12px;
 }
 .issue-title {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem; font-weight: 700; color: #b7760a;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.85rem; font-weight: 700; color: #f0b429;
     margin-bottom: 6px;
 }
-.issue-row { font-size: 0.82rem; color: #666; margin-bottom: 3px; }
-.issue-row b { color: #1a1a1a; }
+.issue-row { font-size: 0.82rem; color: #aaa; margin-bottom: 3px; }
+.issue-row b { color: #ddd; }
 .section-head {
-    font-family: 'Playfair Display', serif; font-size: 1.1rem;
-    font-weight: 700; color: #1a1a1a; letter-spacing: 0px;
-    border-bottom: 2px solid #e8e2d9;
+    font-family: 'Syne', sans-serif; font-size: 1rem;
+    font-weight: 700; color: #fff; letter-spacing: 1px;
+    text-transform: uppercase; border-bottom: 1px solid #1e1e2e;
     padding-bottom: 8px; margin: 28px 0 14px;
 }
 .stButton > button {
-    background: #1a1a1a !important; color: #f7f4ef !important;
-    font-family: 'DM Sans', sans-serif !important; font-weight: 700 !important;
-    letter-spacing: 1.5px !important; border: none !important;
+    background: #f0b429 !important; color: #0a0a0f !important;
+    font-family: 'Syne', sans-serif !important; font-weight: 700 !important;
+    letter-spacing: 1px !important; border: none !important;
     border-radius: 8px !important; padding: 12px 32px !important;
-    font-size: 0.85rem !important; text-transform: uppercase !important;
+    font-size: 0.9rem !important;
 }
-.stButton > button:hover { background: #d4900a !important; color: #fff !important; }
+.stButton > button:hover { background: #ffc94d !important; }
 .stDownloadButton > button {
-    background: #fff !important; color: #1a1a1a !important;
-    border: 2px solid #1a1a1a !important;
-    font-family: 'DM Sans', sans-serif !important; font-weight: 700 !important;
-    letter-spacing: 1px !important; text-transform: uppercase !important;
-}
-.stDownloadButton > button:hover {
-    background: #1a1a1a !important; color: #fff !important;
+    background: #1a1a2e !important; color: #f0b429 !important;
+    border: 1px solid #f0b429 !important;
+    font-family: 'Syne', sans-serif !important; font-weight: 700 !important;
 }
 [data-testid="stFileUploader"] {
-    background: #fff !important;
-    border-radius: 8px !important;
-}
-[data-testid="stFileUploaderDropzone"] {
-    background: #f7f4ef !important;
-    border: 1.5px dashed #e8e2d9 !important;
-}
-[data-testid="stDataFrame"] {
-    border: 1.5px solid #e8e2d9 !important;
+    background: #0e0e1a !important;
     border-radius: 8px !important;
 }
 </style>
